@@ -2,7 +2,7 @@ export const getAnimeTrailers = async (randomNumber) => {
   var trailerUrl;
   try {
     const response = await fetch(
-      "https://animxer-api-phi.vercel.app/meta/anilist/trending",
+      "https://animxer-api-cvxg.vercel.app/meta/anilist/trending",
       // "https://api.consumet.org/meta/anilist/trending",
 
       { method: "GET" }
@@ -17,7 +17,7 @@ export const getAnimeTrailers = async (randomNumber) => {
 
       try {
         const trailerDataResp = await fetch(
-          "https://animxer-api-phi.vercel.app/meta/anilist/info/" + query,
+          "https://animxer-api-cvxg.vercel.app/meta/anilist/info/" + query,
           // "https://api.consumet.org/meta/anilist/info/" + query,
 
           { method: "GET" }
@@ -64,7 +64,7 @@ export const getTopAiringAnime = async () => {
   try {
     const TopAiringAnimeData = await fetch(
       // "https://api.consumet.org/meta/anilist/trending",
-      "https://animxer-api-phi.vercel.app/meta/anilist/trending",
+      "https://animxer-api-cvxg.vercel.app/meta/anilist/trending",
 
       { method: "GET" }
     );
@@ -82,7 +82,7 @@ export const getRecentAnime = async () => {
   try {
     const recentAnimeData = await fetch(
       // "https://api.consumet.org/meta/anilist/recent-episodes?provider=gogoanime",
-      "https://animxer-api-phi.vercel.app/meta/anilist/recent-episodes?provider=gogoanime",
+      "https://animxer-api-cvxg.vercel.app/meta/anilist/recent-episodes?provider=gogoanime",
 
       { method: "GET" }
     );
