@@ -1,7 +1,7 @@
 export const getEpisodeDetails = async (episodeId) => {
   try {
     const response = await fetch(
-      `https://animxer-api-cvxg.vercel.app/meta/anilist/watch/${episodeId}`,
+      `https://animexer-api.vercel.app/meta/anilist/watch/${episodeId}`,
       // `https://api.consumet.org/meta/anilist/watch/${episodeId}`,
 
       { method: "GET" }
